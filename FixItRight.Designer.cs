@@ -28,84 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txbSubject = new System.Windows.Forms.RichTextBox();
+            this.txbName = new System.Windows.Forms.RichTextBox();
+            this.txbContactNumber = new System.Windows.Forms.RichTextBox();
+            this.txbAddress = new System.Windows.Forms.RichTextBox();
+            this.txbDescription = new System.Windows.Forms.RichTextBox();
+            this.txbHazards = new System.Windows.Forms.RichTextBox();
+            this.SubmitButton_Click = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // txbSubject
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(451, 33);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(270, 96);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "         \n           \n                           Subject";
+            this.txbSubject.Location = new System.Drawing.Point(451, 33);
+            this.txbSubject.Name = "txbSubject";
+            this.txbSubject.Size = new System.Drawing.Size(270, 96);
+            this.txbSubject.TabIndex = 0;
+            this.txbSubject.Text = "         \n           \n                           Subject";
+            this.txbSubject.Click += new System.EventHandler(this.txbSubject_Click);
             // 
-            // richTextBox2
+            // txbName
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(354, 162);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(199, 103);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "\n\n\tName";
+            this.txbName.Location = new System.Drawing.Point(354, 162);
+            this.txbName.Name = "txbName";
+            this.txbName.Size = new System.Drawing.Size(199, 103);
+            this.txbName.TabIndex = 1;
+            this.txbName.Text = "\n\n\tName";
+            this.txbName.Click += new System.EventHandler(this.txbName_Click);
             // 
-            // richTextBox3
+            // txbContactNumber
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(609, 162);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(205, 103);
-            this.richTextBox3.TabIndex = 2;
-            this.richTextBox3.Text = "\n\n        Contact Number";
+            this.txbContactNumber.Location = new System.Drawing.Point(609, 162);
+            this.txbContactNumber.Name = "txbContactNumber";
+            this.txbContactNumber.Size = new System.Drawing.Size(205, 103);
+            this.txbContactNumber.TabIndex = 2;
+            this.txbContactNumber.Text = "\n\n        Contact Number";
+            this.txbContactNumber.Click += new System.EventHandler(this.txbContactNumber_Click);
+            this.txbContactNumber.TextChanged += new System.EventHandler(this.txbContactNumber_TextChanged);
             // 
-            // richTextBox4
+            // txbAddress
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(451, 301);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(270, 96);
-            this.richTextBox4.TabIndex = 3;
-            this.richTextBox4.Text = "         \n           \n                        Address";
+            this.txbAddress.Location = new System.Drawing.Point(442, 293);
+            this.txbAddress.Name = "txbAddress";
+            this.txbAddress.Size = new System.Drawing.Size(270, 96);
+            this.txbAddress.TabIndex = 3;
+            this.txbAddress.Text = "         \n           \n                        Address";
+            this.txbAddress.Click += new System.EventHandler(this.txbAddress_Click);
             // 
-            // richTextBox5
+            // txbDescription
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(451, 431);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(270, 96);
-            this.richTextBox5.TabIndex = 4;
-            this.richTextBox5.Text = "         \n           \n        \t     Description";
+            this.txbDescription.Location = new System.Drawing.Point(442, 428);
+            this.txbDescription.Name = "txbDescription";
+            this.txbDescription.Size = new System.Drawing.Size(270, 96);
+            this.txbDescription.TabIndex = 4;
+            this.txbDescription.Text = "         \n           \n        \t     Description";
+            this.txbDescription.Click += new System.EventHandler(this.txbDescription_Click);
             // 
-            // richTextBox6
+            // txbHazards
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(451, 562);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(270, 96);
-            this.richTextBox6.TabIndex = 5;
-            this.richTextBox6.Text = "         \n           \n                         Hazards";
+            this.txbHazards.Location = new System.Drawing.Point(451, 562);
+            this.txbHazards.Name = "txbHazards";
+            this.txbHazards.Size = new System.Drawing.Size(270, 96);
+            this.txbHazards.TabIndex = 5;
+            this.txbHazards.Text = "         \n           \n                         Hazards";
+            this.txbHazards.Click += new System.EventHandler(this.txbHazards_Click);
             // 
-            // button1
+            // SubmitButton_Click
             // 
-            this.button1.Location = new System.Drawing.Point(478, 710);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 95);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.SubmitButton_Click.Location = new System.Drawing.Point(481, 686);
+            this.SubmitButton_Click.Name = "SubmitButton_Click";
+            this.SubmitButton_Click.Size = new System.Drawing.Size(217, 95);
+            this.SubmitButton_Click.TabIndex = 6;
+            this.SubmitButton_Click.Text = "Submit";
+            this.SubmitButton_Click.UseVisualStyleBackColor = true;
             // 
             // FixItRight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 842);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.SubmitButton_Click);
+            this.Controls.Add(this.txbHazards);
+            this.Controls.Add(this.txbDescription);
+            this.Controls.Add(this.txbAddress);
+            this.Controls.Add(this.txbContactNumber);
+            this.Controls.Add(this.txbName);
+            this.Controls.Add(this.txbSubject);
             this.Name = "FixItRight";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -114,13 +121,13 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox txbSubject;
+        private System.Windows.Forms.RichTextBox txbName;
+        private System.Windows.Forms.RichTextBox txbContactNumber;
+        private System.Windows.Forms.RichTextBox txbAddress;
+        private System.Windows.Forms.RichTextBox txbDescription;
+        private System.Windows.Forms.RichTextBox txbHazards;
+        private System.Windows.Forms.Button SubmitButton_Click;
     }
 }
 

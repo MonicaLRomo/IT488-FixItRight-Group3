@@ -102,7 +102,7 @@ namespace WindowsFormsApp8
             string hazards = txbHazards.Text;
             if (hazards.Length == 0)
             {
-                MessageBox.Show("Enter anything that maintence person needs to be aware of, example: dog. If there are no hazards, please enter 0.");
+                MessageBox.Show("Enter anything that the maintence person needs to be aware of: \n\nExample: dog.\n\nIf there are no hazards, please enter 0.");
                 return;
             }
             //If all checks pass

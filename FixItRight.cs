@@ -51,6 +51,10 @@ namespace WindowsFormsApp8
             txbHazards.Text = "";
         }
 
+        private void txbEmail_Click(object sender, EventArgs e)
+        {
+            txbEmail.Text = "";
+        }
         private void SubmitButton_Click_Click(object sender, EventArgs e)
         {
             string subject = txbSubject.Text;
@@ -105,9 +109,19 @@ namespace WindowsFormsApp8
                 MessageBox.Show("Enter anything that the maintence person needs to be aware of: \n\nExample: dog.\n\nIf there are no hazards, please enter 0.");
                 return;
             }
+
+            string email = txbEmail.Text;
+            if (email.Length == 0)
+            {
+                MessageBox.Show("Enter email address to recieve confirmation of submission.");
+                return;
+            }
+
             //If all checks pass
             MessageBox.Show("Thank you! We will get a hold of you as soon as possible.");
 
-        }    
+        }
+
+        
     }
 }

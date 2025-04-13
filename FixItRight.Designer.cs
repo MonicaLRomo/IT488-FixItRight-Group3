@@ -35,6 +35,7 @@
             this.txbDescription = new System.Windows.Forms.RichTextBox();
             this.txbHazards = new System.Windows.Forms.RichTextBox();
             this.SubmitButton_Click = new System.Windows.Forms.Button();
+            this.txbEmail = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // txbSubject
@@ -69,12 +70,12 @@
             // 
             // txbAddress
             // 
-            this.txbAddress.Location = new System.Drawing.Point(442, 293);
+            this.txbAddress.Location = new System.Drawing.Point(354, 287);
             this.txbAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(270, 96);
+            this.txbAddress.Size = new System.Drawing.Size(199, 96);
             this.txbAddress.TabIndex = 3;
-            this.txbAddress.Text = "         \n           \n                        Address";
+            this.txbAddress.Text = "         \n           \n                 Address";
             this.txbAddress.Click += new System.EventHandler(this.txbAddress_Click);
             // 
             // txbDescription
@@ -108,12 +109,23 @@
             this.SubmitButton_Click.UseVisualStyleBackColor = true;
             this.SubmitButton_Click.Click += new System.EventHandler(this.SubmitButton_Click_Click);
             // 
+            // txbEmail
+            // 
+            this.txbEmail.Location = new System.Drawing.Point(609, 287);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(205, 96);
+            this.txbEmail.TabIndex = 7;
+            this.txbEmail.Text = "         \n           \n                   Email";
+            this.txbEmail.Click += new System.EventHandler(this.txbEmail_Click);
+            // 
             // FixItRight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1192, 888);
+            this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.SubmitButton_Click);
             this.Controls.Add(this.txbHazards);
             this.Controls.Add(this.txbDescription);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.RichTextBox txbDescription;
         private System.Windows.Forms.RichTextBox txbHazards;
         private System.Windows.Forms.Button SubmitButton_Click;
+        private System.Windows.Forms.RichTextBox txbEmail;
     }
 }
 

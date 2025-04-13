@@ -51,6 +51,63 @@ namespace WindowsFormsApp8
             txbHazards.Text = "";
         }
 
-        
+        private void SubmitButton_Click_Click(object sender, EventArgs e)
+        {
+            string subject = txbSubject.Text;
+            if (subject.Length == 0)
+            {
+                MessageBox.Show("Enter name of item that needs repair.");
+                return;
+            }
+
+            string name = txbName.Text;
+            if (name.Length ==0)
+            {
+                MessageBox.Show("Please enter your name.");
+                return;
+            }
+
+            string contactnumber = txbContactNumber.Text;
+            //check if input from user is numberic
+            if(!contactnumber.All(char.IsDigit))
+            {
+                MessageBox.Show("Phone number must contain only numbers.");
+                return;
+            }
+            if (contactnumber.Length <10)
+            {
+                MessageBox.Show("Phone number must be 10 digits long");
+                return;
+            }
+            else if (contactnumber.Length == 0)
+            {
+                MessageBox.Show("Please enter phone number");
+                return;
+            }
+
+            string address = txbAddress.Text;
+            if(address.Length == 0)
+            {
+                MessageBox.Show("Please enter address where repair needs to be done.");
+                return;
+            } 
+
+            string description =txbDescription.Text;
+            if (description.Length == 0)
+            {
+                MessageBox.Show("Enter description of the item needing repair or problem.");
+                return;
+            }
+
+            string hazards = txbHazards.Text;
+            if (hazards.Length == 0)
+            {
+                MessageBox.Show("Enter anything that maintence person needs to be aware of, example: dog. If there are no hazards, please enter 0.");
+                return;
+            }
+            //If all checks pass
+            MessageBox.Show("Thank you! We will get a hold of you as soon as possible.");
+
+        }    
     }
 }

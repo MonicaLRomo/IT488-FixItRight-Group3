@@ -40,15 +40,17 @@
             // txbSubject
             // 
             this.txbSubject.Location = new System.Drawing.Point(451, 33);
+            this.txbSubject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbSubject.Name = "txbSubject";
             this.txbSubject.Size = new System.Drawing.Size(270, 96);
-            this.txbSubject.TabIndex = 0;
-            this.txbSubject.Text = "         \n           \n                           Subject";
+            this.txbSubject.TabIndex = 1;
+            this.txbSubject.Text = "                                 \n\n                       Subject";
             this.txbSubject.Click += new System.EventHandler(this.txbSubject_Click);
             // 
             // txbName
             // 
             this.txbName.Location = new System.Drawing.Point(354, 162);
+            this.txbName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(199, 103);
             this.txbName.TabIndex = 1;
@@ -58,16 +60,17 @@
             // txbContactNumber
             // 
             this.txbContactNumber.Location = new System.Drawing.Point(609, 162);
+            this.txbContactNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbContactNumber.Name = "txbContactNumber";
             this.txbContactNumber.Size = new System.Drawing.Size(205, 103);
             this.txbContactNumber.TabIndex = 2;
             this.txbContactNumber.Text = "\n\n        Contact Number";
             this.txbContactNumber.Click += new System.EventHandler(this.txbContactNumber_Click);
-            this.txbContactNumber.TextChanged += new System.EventHandler(this.txbContactNumber_TextChanged);
             // 
             // txbAddress
             // 
             this.txbAddress.Location = new System.Drawing.Point(442, 293);
+            this.txbAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbAddress.Name = "txbAddress";
             this.txbAddress.Size = new System.Drawing.Size(270, 96);
             this.txbAddress.TabIndex = 3;
@@ -77,6 +80,7 @@
             // txbDescription
             // 
             this.txbDescription.Location = new System.Drawing.Point(442, 428);
+            this.txbDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbDescription.Name = "txbDescription";
             this.txbDescription.Size = new System.Drawing.Size(270, 96);
             this.txbDescription.TabIndex = 4;
@@ -86,6 +90,7 @@
             // txbHazards
             // 
             this.txbHazards.Location = new System.Drawing.Point(451, 562);
+            this.txbHazards.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbHazards.Name = "txbHazards";
             this.txbHazards.Size = new System.Drawing.Size(270, 96);
             this.txbHazards.TabIndex = 5;
@@ -95,17 +100,20 @@
             // SubmitButton_Click
             // 
             this.SubmitButton_Click.Location = new System.Drawing.Point(481, 686);
+            this.SubmitButton_Click.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubmitButton_Click.Name = "SubmitButton_Click";
             this.SubmitButton_Click.Size = new System.Drawing.Size(217, 95);
             this.SubmitButton_Click.TabIndex = 6;
             this.SubmitButton_Click.Text = "Submit";
             this.SubmitButton_Click.UseVisualStyleBackColor = true;
+            this.SubmitButton_Click.Click += new System.EventHandler(this.SubmitButton_Click_Click);
             // 
             // FixItRight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 842);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1192, 888);
             this.Controls.Add(this.SubmitButton_Click);
             this.Controls.Add(this.txbHazards);
             this.Controls.Add(this.txbDescription);
@@ -113,8 +121,13 @@
             this.Controls.Add(this.txbContactNumber);
             this.Controls.Add(this.txbName);
             this.Controls.Add(this.txbSubject);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FixItRight";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
             this.ResumeLayout(false);
 
         }

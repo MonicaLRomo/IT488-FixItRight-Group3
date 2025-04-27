@@ -118,6 +118,14 @@ namespace WindowsFormsApp8
                 return;
             }
             //If all checks pass
+            //save to csv file start - dylan
+            string appDirecotry = Application.StartupPath;
+            string filePath = Path.Combine(appDirecotry, "UserInfo.csv");
+
+            if (!File.Exists(filePath))
+                File.WriteAllText(filePath, "Subject, Name, Address, Contact Number, Email, Description, Hazards\n");
+            string csvLine = $"{subject},{name}, {address}, {contactnumber}, {email}, {description}, {hazards}";
+            File.AppendAllText(filePath, csvLine + Environment.NewLine);
             MessageBox.Show("Thank you! We will get a hold of you as soon as possible.");
 
         }

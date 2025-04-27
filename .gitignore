@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/WindowsFormsApp8.csproj
+/.gitignore
+/.gitignore
+/.gitignore

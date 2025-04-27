@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,7 +74,7 @@ namespace WindowsFormsApp8
 
             string contactnumber = txbContactNumber.Text;
             //check if input from user is numberic
-            if(!contactnumber.All(char.IsDigit))
+            if (!contactnumber.All(char.IsDigit))
             {
                 MessageBox.Show("Phone number must contain only numbers.");
                 return;
@@ -90,13 +91,13 @@ namespace WindowsFormsApp8
             }
 
             string address = txbAddress.Text;
-            if(address.Length == 0)
+            if (address.Length == 0)
             {
                 MessageBox.Show("Please enter address where repair needs to be done.");
                 return;
-            } 
+            }
 
-            string description =txbDescription.Text;
+            string description = txbDescription.Text;
             if (description.Length == 0)
             {
                 MessageBox.Show("Enter description of the item needing repair or problem.");
@@ -116,12 +117,10 @@ namespace WindowsFormsApp8
                 MessageBox.Show("Enter email address to recieve confirmation of submission.");
                 return;
             }
-
             //If all checks pass
             MessageBox.Show("Thank you! We will get a hold of you as soon as possible.");
 
         }
-
-        
+        }
     }
-}
+
